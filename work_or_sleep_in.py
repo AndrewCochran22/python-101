@@ -4,7 +4,7 @@ if (day == 0) or (day == 6):
     print("Sleep in")
 
 elif (day >= 1) and (day <=5):
-    print("Work")
+    print("Go to work")
 
 else:
     print("Incorrect parameters.")

@@ -1,6 +1,6 @@
 def countFriends(dictionary):
-    
-    return
+    ramit["friends_count"] = "2"
+    return ramit
 
 ramit = {
     "name": "Ramit",
@@ -19,3 +19,5 @@ ramit = {
         }
     ]
 }
+
+print(countFriends(ramit))

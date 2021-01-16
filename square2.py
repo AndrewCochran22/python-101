@@ -1,8 +1,8 @@
-n = int(input("How big is the square?"))
-m = n
+star = int(input("How big is the square? "))
 
-count = input
-
-while n < count :
-    print(n)
+for s in range(star):
+    for s in range(star):
+        print("*", end = " ")
+    print() 
+        
     
