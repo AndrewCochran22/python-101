@@ -1,6 +1,6 @@
 bill_total = float(input("What is the total bill amount? "))
 service = str(input("Was the service good, fair, or bad? "))
-# split = int(input("Split how many ways? "))
+split = int(input("Split how many ways? "))
 
 tip_amount = 0
 
@@ -22,7 +22,5 @@ else:
 total_amount = bill_total + tip_amount
 print("Total amount: $%.2f" % total_amount)
 
-# per_person = total_amount / split
-# print("Amount per person: $%.2f" % per_person)
-
-
+per_person = total_amount / split
+print("Amount per person: $%.2f" % per_person)
