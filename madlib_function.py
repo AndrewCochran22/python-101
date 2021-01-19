@@ -1,8 +1,14 @@
+# def madlame, subject):
+#     print(f"{name}'s favorite subject is {subject}.")
+#     return 
+
+# madlib("Jenn", "Science")
+
+# madlib("Jeff", "Historyib(n")
+
 def madlib(name, subject):
-    print(f"{name}'s favorite subject is {subject}.")
-    return 
+    return ("%s's favorite subject is %s." % (name, subject))
 
-madlib("Jenn", "Science")
+print(madlib("Jeff", "history"))
 
-madlib("Jeff", "History")
-
+print(madlib("Christine", "science"))
