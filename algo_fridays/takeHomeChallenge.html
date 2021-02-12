@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        h1 {
+            display: flex;
+            color: blue;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        img {
+            width: 100%;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+        }
+
+        fieldset {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Australian Kangaroo Fights</h1>
+    </header>
+    <div class="container">
+        <div>
+            <fieldset>
+                <legend>Submit Joke</legend>
+                <form>
+                    <label for="joke">Enter Joke</label><br>
+                    <textarea></textarea><br>
+                    <input type="submit" id="joke" name="joke">
+                </form>
+            </fieldset>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="download.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kangaroo Joke</h5>
+              <p class="card-text">What do you call it when a marsupial tricks you?</p>
+                <p>A kanga-ruse.</p>
+            </div>
+            <a href="https://www.scarymommy.com/kangaroo-jokes-puns/" class="btn btn-primary">More Jokes!</a>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        const joke = querySelector("#joke")
+
+        joke.eventListener("click", (e) => {
+            e.preventDefault();
+            console.log("Your Joke Sucks Try Again!");
+        })
+    </script>
+</body>
+
+</html>
